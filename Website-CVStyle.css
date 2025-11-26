@@ -9,8 +9,9 @@ nav {
 nav ul {
     list-style-type: none;
     overflow: hidden;
-    display: flex;
+    display:  flex;
     flex-wrap: wrap;
+
 }
 nav ul li {
     width: 15%;
@@ -22,6 +23,7 @@ nav ul li a {
     display: block;
     color: #ffffff;
     text-decoration: none;
+
 }
 
 nav ul li a:hover {
@@ -33,4 +35,31 @@ nav ul li a:hover {
         width: 100%;
     }
 }
-button upbutton
+button {
+    background-color: #603d3d;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+
+}
+.Upbotton {
+    width : 35px;
+    height: 35px;
+    background-color: #000000;
+    color: #ffffff;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: inline flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+}
