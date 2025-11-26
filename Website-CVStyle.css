@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #343a40;
+}
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li {
+    width: 15%;
+}
+
+nav ul li a {
+    padding: 20px;
+    text-align: center;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #aaaaaa;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul li {
+        width: 100%;
+    }
+}
+button upbutton
