@@ -1,36 +1,117 @@
-* {
-    margin: 0;
-    padding: 0;
+html {
+    scroll-behavior: smooth;
 }
-
-nav {
-    background-color: #343a40;
-}
-nav ul {
-    list-style-type: none;
-    overflow: hidden;
+.nav-menu  {
     display: flex;
-    flex-wrap: wrap;
+    gap: 3%;
+    padding: 3% 3%;
+    justify-content: space-between;
+    background: #e8e8e8;
 }
-nav ul li {
-    width: 15%;
-}
-
-nav ul li a {
-    padding: 20px;
-    text-align: center;
-    display: block;
-    color: #ffffff;
+.nav-menu a {
     text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000000;
+    transition: 0.3s;
+
 }
 
-nav ul li a:hover {
-    background-color: #aaaaaa;
+
+
+.nav-menu a:hover {
+    transition: color 0.3s;
+}
+.basisinfobox {
+    position: relative;
+    height: 50%;
+    background-image: url(".idea/AfBeeldingen/2151899151.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AchtergrondFoto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+
+}
+.bisisinfo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dfdfdf;
+    padding: 1% 2%;
+    backdrop-filter: blur(8px);
+    max-width: 50%;
+    max-height: 50%;
+    width: 100%;
+    color: #000000;
+}
+.bisisinfo .text{
+    flex: 3;
+    padding-right: 20px;
 }
 
-@media screen and (max-width: 600px) {
-    nav ul li {
-        width: 100%;
+.bisisinfo .text h1 {
+    margin: 0 0 10px 0;
+    font-size: 36px;
+}
+.bisisinfo .text h4 {
+    margin: 0;
+    font-size: 18px;
+}
+.bisisinfo .text p {
+    margin: 0;
+    font-size: 14px;
+}
+.bisisinfo .foto {
+    flex: 3;
+    overflow: auto;
+}
+.bisisinfo .foto img {
+    width: 100%;
+    height: 100%;
+}
+.experiencesection{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(200, 200, 200);
+}
+
+.experiencetitle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dfdfdf;
+    padding: 1% 2%;
+    backdrop-filter: blur(8px);
+    max-width: 50%;
+    max-height: 50%;
+    width: 100%;
+    color: #000000;
+}
+
+
+@media (max-width: 768px) {
+    .content-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .content-box .text {
+        padding: 0 0 20px 0;
+    }
+    .content-box .photo img {
+        max-width: 120px;
     }
 }
-button upbutton
