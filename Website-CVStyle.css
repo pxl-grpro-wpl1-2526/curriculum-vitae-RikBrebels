@@ -80,7 +80,7 @@ html {
     width: 100%;
     height: 100%;
 }
-.experiencesection{
+.Overmijsection {
     position: relative;
     display: flex;
     align-items: center;
@@ -88,9 +88,8 @@ html {
     background: rgb(200, 200, 200);
 }
 
-.experiencetitle {
+.Overmijtitle {
     position: relative;
-    display: flex;
     align-items: center;
     justify-content: center;
     background: #dfdfdf;
@@ -102,16 +101,61 @@ html {
     color: #000000;
 }
 
+.DiplomaEnOpleiding {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(200, 200, 200);
+}
 
-@media (max-width: 768px) {
-    .content-box {
-        flex-direction: column;
-        text-align: center;
-    }
-    .content-box .text {
-        padding: 0 0 20px 0;
-    }
-    .content-box .photo img {
-        max-width: 120px;
-    }
+.DiplomaEnOpleidingtitle {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: #dfdfdf;
+    padding: 1% 2%;
+    backdrop-filter: blur(8px);
+    max-width: 50%;
+    max-height: 50%;
+    width: 100%;
+    color: #000000;
+}
+.Talen {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(200, 200, 200);
+}
+
+.Talentitle {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: #dfdfdf;
+    padding: 1% 2%;
+    backdrop-filter: blur(8px);
+    max-width: 50%;
+    max-height: 50%;
+    width: 100%;
+    color: #000000;
+}
+
+@media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr}
+    .gallery{grid-template-columns:repeat(2,1fr)}
+    .cards{grid-template-columns:repeat(2,1fr)}
+    .about-grid{grid-template-columns:1fr}
+    .contact-grid{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+    .main-nav{display:none}
+    .menu-toggle{display:inline-block}
+    .main-nav.open{display:flex; position:absolute; right:20px; top:64px; background:white; padding:10px; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.06); flex-direction:column}
+    .gallery{grid-template-columns:1fr}
+    .cards{grid-template-columns:1fr}
+    .hero h1{font-size:1.6rem}
+
+
 }
