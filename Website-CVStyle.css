@@ -71,3 +71,77 @@ nav ul li a:hover {
     font-size: 14px;
     text-align: center;
 }
+.OpleidingEnErvaring {
+    width: 70%;
+    padding: 20px;
+}
+section h2 {
+    color: #2c7be5;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.werk h3 {
+    margin: 0;
+}
+.werk p em {
+    color: #555;
+}
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c7be5;
+    color: white;
+    padding: 15px 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+footer button {
+    background-color: white;
+    color: #2c7be5;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+footer button:hover {
+    background-color: #ffd05b;
+    color: #2c7be5;
+}
+
+
+@media (max-width: 575px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        flex-direction: column;
+    }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+    body {
+        font-size: 15px;
+    }
+    .container {
+        flex-direction: column;
+    }
+}
+@media (min-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        flex-direction: row;
+    }
+}
